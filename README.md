@@ -21,7 +21,7 @@ To get started, clone the repository to your local machine with this command:
 
 ```bash
 git clone https://github.com/yourusername/Project-Code-E-Commerce.git
-'''
+'''bash
 
 Make sure to fill in yourusername. Otherwise just copy the repo link from github and do git clone
 with that url.
