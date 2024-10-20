@@ -16,15 +16,15 @@ You can view your project at  http://localhost:3000  in the browser.
 
 ## Testing
 
-'''
+```
 npm test
-'''
+```
 
 ## Building
 
-'''
+```
 npm run build
-'''
+```
 
 ## To view your HTML/CSS
 We will be using Vite to view the project!
