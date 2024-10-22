@@ -37,7 +37,8 @@ export default Search;
 
 //favoriting a product
 //name, netid
-//changing email
+//changing email (need email from login. Add a button saying "Change Email". Then it lets should let user type in a)
+
 //profile image if someone set it up
 // what products that sellers are selling
 

@@ -16,13 +16,6 @@ function UserPage(props) {
 
 }
 
-function favoriteProduct() {
-
-}
-
-//
-
-
 function GetPastTransactions({transactionData}) {
   const products = transactionData[0];
   const prices = transactionData[1];
