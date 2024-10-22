@@ -3,16 +3,23 @@
   }
   
   body {
+
     font-family: sans-serif;
     margin: 20px;
     padding: 0;
   }
   
   h1 {
+    color: rgb(0, 0, 5);
     margin-top: 0;
     font-size: 22px;
-    margin-bottom: "30px"
+    margin-bottom: 30px;
+    
   }
+  .username {
+    color: blue;
+  }
+  
   
   h2 {
     margin-top: 0;
@@ -70,3 +77,24 @@
     text-align: left;
     width: 33%;
 }
+th {
+  border-bottom: 2px solid black;
+}
+
+input {
+  position: absolute;
+  top: 10px; 
+  right: 80px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 5px 150px 10px 10px;
+  margin-bottom:5px;
+  border: 1px solid #ccc
+}
+.searchbutton {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+

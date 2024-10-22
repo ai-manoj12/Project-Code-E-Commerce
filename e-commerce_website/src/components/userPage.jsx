@@ -1,12 +1,26 @@
 import React from 'react';
 import '../styles.css';
+import './Search'
+import Search from './Search';
 function UserPage(props) {
-  return (<><h1>Welcome to the e-commerce website, {props.username} </h1>
+  return (
+  <>
+  <h1>
+    Welcome to the e-commerce website, <div className="username">{props.username}</div>
+  </h1> 
+  <Search>
+    
+  </Search>
   <GetPastTransactions transactionData={props.history} /></>
   );
 
 }
 
+function favoriteProduct() {
+
+}
+
+//
 
 
 function GetPastTransactions({transactionData}) {
@@ -14,21 +28,16 @@ function GetPastTransactions({transactionData}) {
   const prices = transactionData[1];
   const dates = transactionData[2];
 
-  
   const productRows = [];
   for (let i = 0; i < products.length; i++) {
     productRows.push(
-      <tr>
-        <td >{products[i]}</td>
-        <td >{prices[i]}</td>
-        <td >{dates[i]}</td>
-      </tr>
+      <Transaction product={products[i]} price ={prices[i]} date={dates[i]}/>
     );
   }
   return (
     <div>
       <h2>History of Transactions:</h2>
-      <table className="tableStyle">
+      <table>
         <thead>
           <tr>
             <th >Product  </th>
@@ -44,9 +53,15 @@ function GetPastTransactions({transactionData}) {
   );
 }
 
-
-
-
+function Transaction(props) {
+  return (
+    <tr>
+        <td >{props.product}</td>
+        <td >${props.price.toFixed(2)}</td>
+        <td >{props.date}</td>
+      </tr>
+    );
+}
 
 
 
