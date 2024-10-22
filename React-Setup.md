@@ -8,9 +8,9 @@ Make sure you have Node and Git installed:
 
 ## Checking Dependencies
 Check if you already have dependencies set up by running
-'''
+```
 npm -v
-'''
+```
 
 ## Installing Dependencies
 Make sure you are within your local directory for the project and run
