@@ -64,18 +64,30 @@
     padding: 0;
   }
   
+.transactionTable {
+  width: 25%;
+  border-collapse: collapse;
+}
  
-  
+
+.userInfo {
+  position: absolute;
+  /* border-top: 2px solid black;  */
+  margin-right: 300px;
+  margin-top: 60px;
+  top: 40px;
+  right: 50px;
+}
 
 .tableStyle{
     width: "80%";
     margin: "20px auto";
     border-collapse: "collapse";
   }
-  th, td {
-    padding: 5px 20px;
-    text-align: left;
-    width: 33%;
+th, td {
+  padding: 5px 20px;
+  text-align: left;
+  width: 33%;
 }
 th {
   border-bottom: 2px solid black;
