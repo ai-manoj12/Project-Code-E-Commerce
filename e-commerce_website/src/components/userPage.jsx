@@ -114,8 +114,8 @@ function GetProductsSold (props) {
     <div style={{ paddingTop: '40px' }}>
       <h2 className = "soldTitle">
       Products Sold:
-    </h2>
-      <table className="soldTable" style={{ marginTop: '10px' }}>
+      </h2>
+      <table className="soldTable" style={{ marginTop: '10px', marginLeft: '20px'}}>
         <thead>
           <tr>
             <th>Product</th>
