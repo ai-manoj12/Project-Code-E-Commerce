@@ -89,11 +89,10 @@
 
 .userInfo {
   position: absolute;
-  /* border-top: 2px solid black;  */
-  margin-right: 300px;
+  margin-right: 100px;
   margin-top: 60px;
   top: 40px;
-  right: 50px;
+  right: 510px;
 }
 
 .tableStyle{
