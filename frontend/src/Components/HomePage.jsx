@@ -13,53 +13,6 @@ const HomePage = () => {
         setDropdownStatus(!isDropdownActive);
       };
 
-    // const likeButton = (item) => {
-    //     let heart;
-    //     if (item.liked) {
-    //         heart = (<FaHeart className='like-button' onClick={toggleLike}></FaHeart>)
-    //     } else {
-    //         heart = (<FaRegHeart className='like-button' onClick={toggleLike}></FaRegHeart>)
-    //     }
-    //     return (
-    //         {heart}
-    //     )
-    // };
-
-    const renderItem = (item) => {
-
-        const itemName = item.name;
-        const itemPrice = item.price;
-        const itemImg = item.picture;
-        let heart;
-        if (item.liked) {
-            heart = (<FaHeart className='like-button' onClick={toggleLike}></FaHeart>)
-        } else {
-            heart = (<FaRegHeart className='like-button' onClick={toggleLike}></FaRegHeart>)
-        }
-        return (
-            <div className='item-card'> 
-
-                <div className='image-box'>
-
-                    <img className='item-image' src={itemImg}></img>
-                {/* <button className="like-button" onClick={toggleLike}>
-
-                    <i className={item.liked ? <FaHeart></FaHeart> : <FaRegHeart></FaRegHeart>}></i>
-                </button> */}
-                {heart}
-                </div>
-                <div className='item-text'>
-                    <div className='item-name'>{itemName}</div>
-                    <div className='item-price'>${itemPrice}</div>
-                </div>
-
-            </div>
-        )
-    };
-
-    const toggleLike = (item) => {
-        item.liked = !item.liked;
-      };
 
     const testItem = {
         "name": "T-Shirt",
@@ -142,7 +95,7 @@ const HomePage = () => {
                     <button className='button view-detail'>View Detail</button>
                 </div>
                 <div className='header-image'>
-                    <img src={require('../Images/CartImage.png')} className='image-main' />
+                    <img src={require('../Images/CartImage.png')} alt="tiny-cart-image" className='image-main' />
                 </div>
             </div>
             <div className="featured-header"> 
@@ -193,13 +146,55 @@ const HomePage = () => {
                 {/* @TODO create items, prob make a render item function */}
                 {
                     // allEvents.map((event) => (renderEvent(event)))
-                testItems.map((item) => (renderItem(item)))
+                testItems.map((item) => (ItemCard(item)))
                 }
             </div>
 
 
         </div>
     );
+};
+
+const ItemCard = (item) => {
+    const [liked, setLiked] = useState(false);
+
+    const toggleLike = () => {
+
+        setLiked(!liked);
+        item.liked = liked;
+    }
+
+    const itemName = item.name;
+    const itemPrice = item.price;
+    const itemImg = item.picture;
+    // let heart;
+    // if (item.liked) {
+    //     heart = (<FaHeart className='like-button' onClick={toggleLike}></FaHeart>)
+    // } else {
+    //     heart = (<FaRegHeart className='like-button' onClick={toggleLike}></FaRegHeart>)
+    // }
+    // heart = (liked ? <FaHeart className='like-button' onClick={toggleLike}></FaHeart> : 
+    // <FaRegHeart className='like-button' onClick={toggleLike}></FaRegHeart>);
+    return (
+        <div className='item-card'> 
+
+            <div className='image-box'>
+
+                <img className='item-image' alt={itemName} src={itemImg}></img>
+            {/* <button className="like-button" onClick={toggleLike}>
+
+                <i className={item.liked ? <FaHeart></FaHeart> : <FaRegHeart></FaRegHeart>}></i>
+            </button> */}
+            {liked ? <FaHeart className='like-button' onClick={toggleLike}></FaHeart> : 
+    <FaRegHeart className='like-button' onClick={toggleLike}></FaRegHeart>}
+            </div>
+            <div className='item-text'>
+                <div className='item-name'>{itemName}</div>
+                <div className='item-price'>${itemPrice}</div>
+            </div>
+
+        </div>
+    )
 };
 
 export default HomePage;

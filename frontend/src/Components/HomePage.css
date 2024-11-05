@@ -29,6 +29,8 @@
     border: none;
     border-radius: 10px;
     margin-left: 5px;
+
+    font-family:'Abhaya Libre', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
 }
 .search:focus {
@@ -119,7 +121,7 @@ li:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    color: grey;
+    color: #b6babe;
     
 }
 .icon:hover {
@@ -186,8 +188,11 @@ li:hover {
     /* margin-left: 100px;
     margin-right: 100px; */
     justify-content: space-between;
+
+    
 }
 .card {
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -217,6 +222,8 @@ li:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    
 }
 .item-card {
     
@@ -290,7 +297,7 @@ li:hover {
     border: none;
     cursor: pointer;
     font-size: 1.5rem;
-    color: #ff4d4f;
+    color: black;
     width: 16px;
     height: 16px;
 }
@@ -299,5 +306,5 @@ li:hover {
   }
   
   .like-button .fas {
-    color: #ff4d4f;
+    color: black;
   }
