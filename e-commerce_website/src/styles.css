@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+
+    font-family: sans-serif;
+    margin: 20px;
+    padding: 0;
+  }
+  
+  h1 {
+    color: rgb(0, 0, 5);
+    margin-top: 0;
+    font-size: 22px;
+    margin-bottom: 30px;
+    
+  }
+  .username {
+    color: blue;
+  }
+  
+  
+  h2 {
+    margin-top: 0;
+    font-size: 20px;
+  }
+  
+  h3 {
+    margin-top: 0;
+    font-size: 18px;
+  }
+  
+  h4 {
+    margin-top: 0;
+    font-size: 16px;
+  }
+  
+  h5 {
+    margin-top: 0;
+    font-size: 14px;
+  }
+  
+  h6 {
+    margin-top: 0;
+    font-size: 12px;
+  }
+  
+  code {
+    font-size: 1.2em;
+  }
+  
+  ul {
+    padding-inline-start: 20px;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    margin: 20px;
+    padding: 0;
+  }
+  
+.transactionTable {
+  width: 25%;
+  border-collapse: collapse;
+}
+.soldTable {
+  width: 50%;
+  border-collapse: collapse;
+  position: absolute;
+  /* border-top: 2px solid black;  */
+  margin-right: 100px;
+  margin-top: 200px;
+  top: 350px;
+  right: 50px;
+}
+.soldTitle {
+  position: absolute;
+  margin-right: 100px;
+  margin-top: 200px;
+  top: 130px;
+  right: 610px;
+}
+ 
+
+.userInfo {
+  position: absolute;
+  margin-right: 100px;
+  margin-top: 60px;
+  top: 40px;
+  right: 510px;
+}
+
+.tableStyle{
+    width: "80%";
+    margin: "20px auto";
+    border-collapse: "collapse";
+  }
+th, td {
+  padding: 5px 20px;
+  text-align: left;
+  width: 33%;
+}
+th {
+  border-bottom: 2px solid black;
+}
+
+input {
+  position: absolute;
+  top: 50px; 
+  right: 80px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 5px 150px 10px 10px;
+  margin-bottom:5px;
+  border: 1px solid #ccc
+}
+.searchbutton {
+  position: absolute;
+  top: 60px;
+  right: 10px;
+}
+
+
