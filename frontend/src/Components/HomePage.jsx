@@ -56,7 +56,7 @@ const HomePage = () => {
                     <div className="subheading">From iClickers to ioLabs, buy and sell your used school tech and textbooks 
                         to help students achieve their academic goals.
                     </div>
-                    <button className='button buy-now'>Buy Now</button>
+                    <button className='button buy-now'>Shop Now</button>
                     <button className='button view-detail'>View Detail</button>
                 </div>
                 {/* <div className='header-image'> */}
@@ -66,7 +66,7 @@ const HomePage = () => {
             <div className="featured-header"> 
                 <div className='featured-navbar'>
                     <h2 className='featured-categories-text'>Featured Categories</h2>
-                    <button className="button view-detail small">View Detail</button>
+                    <button className="button view-detail small">All Categories</button>
                 </div>
                 <div className='categories-list'>
                     {/* @TODO create categories list */}
@@ -109,9 +109,17 @@ const HomePage = () => {
             </div>
             <div className="items"> 
                 {/* @TODO create items, prob make a render item function */}
+                
                 {
                     // allEvents.map((event) => (renderEvent(event)))
-                testItems.map((item) => (ItemCard(item)))
+                
+                testItems.map((item) => ( 
+                    <div className="itemBox"> 
+                        {ItemCard(item)}
+                    </div>
+                
+                    
+                ))
                 }
             </div>
 
@@ -132,14 +140,7 @@ const ItemCard = (item) => {
     const itemName = item.name;
     const itemPrice = item.price;
     const itemImg = item.picture;
-    // let heart;
-    // if (item.liked) {
-    //     heart = (<FaHeart className='like-button' onClick={toggleLike}></FaHeart>)
-    // } else {
-    //     heart = (<FaRegHeart className='like-button' onClick={toggleLike}></FaRegHeart>)
-    // }
-    // heart = (liked ? <FaHeart className='like-button' onClick={toggleLike}></FaHeart> : 
-    // <FaRegHeart className='like-button' onClick={toggleLike}></FaRegHeart>);
+
     return (
         <div className='item-card'> 
 
