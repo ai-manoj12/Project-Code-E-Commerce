@@ -8,11 +8,7 @@ import "./HomePage.css";
 import Header from "./header" ;
 
 const HomePage = () => {
-    // const [isDropdownActive, setDropdownStatus] = useState(false);
 
-    // const toggleDropdown = () => {
-    //     setDropdownStatus(!isDropdownActive);
-    //   };
 
 
     const testItem = {
@@ -63,9 +59,9 @@ const HomePage = () => {
                     <button className='button buy-now'>Buy Now</button>
                     <button className='button view-detail'>View Detail</button>
                 </div>
-                <div className='header-image'>
+                {/* <div className='header-image'> */}
                     <img src={require('../Images/CartImage.png')} alt="tiny-cart-image" className='image-main' />
-                </div>
+                {/* </div> */}
             </div>
             <div className="featured-header"> 
                 <div className='featured-navbar'>
