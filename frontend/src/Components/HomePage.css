@@ -210,13 +210,10 @@
         color: white;
         flex-direction: column;
         justify-content: center;
-        /* align-items: center; */
-        
-        /* z-index: 1; */
+
 
         position: relative;
-        /* height: 60vh; */
-        /* width: 100%; */
+
         height: 40vh;
         min-height: 300px;
 
@@ -224,42 +221,27 @@
 
        
     }
-    .header::before {
-        content: "";
-        position: absolute;
 
-        width: 100%;
-        height: 100%;
-        background-image: url('../Images/CartImage.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        filter: blur(6px); 
-    
-        /* z-index: -1; */
-    }
-
-    .header-detail {
-        position: relative;
-
-        
-    }
     .image-main {
-        display: none;
-        filter: blur(4px);
-
         position: absolute;
-        /* top: 40px; */
+        top: 0px;
+        filter: blur(6px);
+        width: 100%;
+        height: 40vh;
+        min-height: 300px;
+        object-fit: cover;
+
+    
     }
     .header-detail {
         max-width: unset;
         width: 80vw;
-
+        position: relative;
+        z-index: 1;
         
 
         margin: unset;
-        /* margin-bottom: unset;
-        margin-right: unset; */
+      
     }
     .subheading {
         color: white;
