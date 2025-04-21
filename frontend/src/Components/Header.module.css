@@ -1,0 +1,147 @@
+.navBar {
+    border-bottom: 2px solid #E4E9EE;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    
+    font-size: 14px;
+}
+.title {
+    margin-left: 5px;
+}
+.logo {
+    display: flex;
+    flex-direction: row;
+
+}
+.search {
+    
+    width: 40vw; 
+    min-height: 25px;
+   
+    background-color: #E4E9EE;
+    border: none;
+    border-radius: 10px;
+    margin-left: 5px;
+
+    font-family:'Abhaya Libre', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.search:focus {
+    border: none;
+    outline: none;
+   
+}
+.searchIcon {
+    margin-right: 10px;
+    
+}
+.searchBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+
+    background-color: #E4E9EE;
+    border: none;
+    border-radius: 10px;
+}
+.dropDown {
+    padding: 5px;
+    border-right: 1px solid white;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+
+    transition: color 0.1s ease-in-out;
+}
+.dropDown:hover {
+    
+    
+}
+.dropArrow {
+    padding: 0px;
+    margin: 0px;
+    margin-left: 3px;
+
+    transition: all 0.3s ease;
+}
+
+.dropArrow.flip {
+    transform: rotate(-180deg);
+}
+.dropdownMenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    color: black;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    width: 100px;
+
+    transition: all 0.5s ease-in-out;
+}
+li:hover {
+    background-color: #E4E9EE;
+    border-radius: 5px;
+    
+    
+}
+.divider {
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.searchDropdown {
+    display: flex;
+    flex-direction: row;
+    background-color: #E4E9EE;
+    border-radius: 10px 10px;
+    justify-content: center;
+}
+.icon {
+    margin: 3px;
+    margin-left: 10px;
+    padding: 0px;
+    padding: 4px;
+    cursor: pointer;
+    font-size: x-large;
+
+    transition: all 0.1s ease;
+}
+.navbarIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #b6babe;
+    
+}
+.icon:hover {
+    color: grey;
+}
+
+@media (max-width: 600px) {
+    .navBar {
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .dropDown {
+        display: none;
+        
+    }
+    .search {
+        width: 30vw;
+    }
+}

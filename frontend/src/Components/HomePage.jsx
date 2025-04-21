@@ -4,14 +4,15 @@ import {FaMicrochip, FaPencil, FaBoltLightning, FaH} from "react-icons/fa6"
 import { TbDeviceRemote } from "react-icons/tb";
 import { IoIosArrowDropdown } from "react-icons/io";
 import "@fontsource/abhaya-libre";
-import "./HomePage.css"
+import "./HomePage.css";
+import Header from "./header" ;
 
 const HomePage = () => {
-    const [isDropdownActive, setDropdownStatus] = useState(false);
+    // const [isDropdownActive, setDropdownStatus] = useState(false);
 
-    const toggleDropdown = () => {
-        setDropdownStatus(!isDropdownActive);
-      };
+    // const toggleDropdown = () => {
+    //     setDropdownStatus(!isDropdownActive);
+    //   };
 
 
     const testItem = {
@@ -52,39 +53,7 @@ const HomePage = () => {
         <div className="home-page">
             {/* <h1>This is a test</h1> */}
             {/* NavBar */}
-            <div className="navBar"> 
-                <div className='logo'>
-                    <FaShoppingBag></FaShoppingBag>
-                    <div className="title">E-Commerce</div>
-                </div>
-                {/* Need to make drop-down */}
-                <div className='search-dropdown'>
-                    <div className="drop-down" onClick={toggleDropdown}>
-                        Categories
-                        <IoIosArrowDropdown className='drop-arrow'></IoIosArrowDropdown>
-                    
-                    {isDropdownActive && (
-                        <ul className="dropdown-menu">
-                            <li>Textbooks</li>
-                            <li>Lab Kits</li>
-                            <li>ECE Kits</li>
-                            <li>iClickers</li>
-                            <li>General Supplies</li>
-                            <li>Chargers</li>
-                        </ul>
-                    )}
-                    </div>
-                    {/* <div className='divider'>|</div> */}
-                    <div className='search-bar'>
-                        <input type="text" className="search" placeholder="Search for items..."/>
-                        <FaSearch className='search-icon'></FaSearch>
-                    </div>
-                </div>
-                <div className="navbar-icons">
-                    <FaShoppingCart className='icon'/>
-                    <FaUser className='icon'/>
-                </div>
-            </div>
+            <Header></Header>
             <div className="header"> 
                 <div className="header-detail">
                     <h1 className="slogan">Your One-Stop Shop for UIUC Essentials</h1>
