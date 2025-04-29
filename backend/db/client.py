@@ -20,4 +20,4 @@ except Exception as e:
     print("❌ Failed to connect to MongoDB:", e)
 
 # Now expose the database
-db = client["eCommerceDB"]
+db = client["ecommerceTest"]
